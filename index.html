@@ -1,33 +1,17 @@
 <html>
 <head>
-  <title>Cisco Webex Embedded Apps Framework Sample</title>
-  <script src="./WebexEmbeddedAppEmulatorFramework.js" defer></script>
+  <title>Cisco Webex Embedded Apps Framework Testing Harness</title>
+  <script src="https://webexsamples.github.io/EmbeddedAppSample/WebexEmbeddedAppEmulatorFramework.js" defer></script>
   <script src="./index.js" defer></script>
 </head>
 <body>
-  <div>
-    <h1>Cisco Webex Embedded Apps Framework Sample</h1>
-    <div>
-      This sample application shows how to utilize the Webex Embedded App Emulator Framework to build an app.  <a href="https://glitch.com/edit/#!/webex-embedded-application">Click Here</a> to see the source.
-    </div>
+    <h1>Cisco Webex Embedded Apps Framework Testing Harness</h1>
+    <p>This simple test harness lets you experiment with the functionality of the Embedded Apps Framework.</p>
 
-    <h4>Methods</h4>
     <button onclick="handleGetUser()">getUser()</button>
-    <button onclick="handleGetMeeting()">getMeeting()</button>
-    <button onclick="handleGetSpace()">getSpace()</button>
 
-    <h4>You're the HOST... Launch the app for everyone</h4>
-    <div>
-      <input id="shareUrl" placeholder="URL to open on participant" size="45" value="http://localhost" />  
-    </div>
-    <div>
-      <button onclick="handleSetShare()">setShareUrl()</button>
-      <button onclick="handleClearShare()">clearShareUrl()</button>
-    </div>
-  </div>
-  <h4>Recent Event Logs</h4>
-  <div>
+    <h1>Event Log</h1>
+    <p>Application events are displayed here...</p>
     <ul id="console" />
-  </div>
 </body>
 </html>
