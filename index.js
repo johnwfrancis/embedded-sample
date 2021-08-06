@@ -10,4 +10,13 @@ function log(type, data) {
   ul.prepend(li);
 }
 
-app.listen('application:themeChanged', (payload) => log('application:themeChanged', payload))
+function handleGetUser(){
+  app.context.getUser().then((user) => {
+    log('Complete JSON string: ', user);
+    log('user.id: ', user.id);
+    log('user.orgId: ', user.orgId);
+    log('user.email: ', user.email);
+    log('user.displayName: ', user.displayName);
+    log('user.token: ', user.token);
+  });
+}
